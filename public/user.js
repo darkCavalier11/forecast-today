@@ -9,7 +9,7 @@ const humidity = document.querySelector('.humidity-data')
 
 console.log('js loaded')
 const response = function () {
-    fetch(`http://localhost:3000/weather?place=${query.value}`).then((response) => {
+    fetch(`/weather?place=${query.value}`).then((response) => {
         response.json().then((data) => {
                 document.querySelector('.result').style.display = 'inline-block'
                 query.style.display = 'none'
