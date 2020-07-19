@@ -5,7 +5,7 @@ const location = require('./utils/location')
 const app = express()
 const hbs = require('hbs')
 const staticDir = path.join(__dirname, 'public')
-
+const PORT = process.env.PORT || 3000
 app.use(express.static(staticDir))
 
 app.set('view engine', 'hbs')
@@ -32,6 +32,6 @@ app.get('/weather', (req, res)=>{
         }
     })
 })
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     console.log('server is up and running')
 })
