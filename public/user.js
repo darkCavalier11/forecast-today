@@ -12,6 +12,7 @@ const response = function () {
     fetch(`/weather?place=${query.value}`).then((response) => {
         response.json().then((data) => {
                 document.querySelector('.result').style.display = 'inline-block'
+                document.querySelector('footer').style.display = 'none'
                 query.style.display = 'none'
                 button.style.display = 'none'
                 data = data.data
