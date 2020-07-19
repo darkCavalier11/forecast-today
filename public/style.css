@@ -134,13 +134,13 @@ body{
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 740px){
     .result{
         height: 36rem;
         width: 24rem;
         position: absolute;
         top: 66%;
-        left: 69%;
+        left: 63%;
         transform: translate(-50%, -50%);
         z-index: 20;
     }
